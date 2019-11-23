@@ -35,4 +35,21 @@ def new_post():
         return redirect(url_for('main.index'))
     return render_template('pitch.html',form=form)
 
+@main.route('/comment/<int:post_id>',methods=['GET','POST'])
+@login_required
+def comment(post_id):
+    form = CommentForm()
+    Post = Post.query.get(post_id)
+    user = User.query.all()
+    comments = Comment.query.filter_by(post_id=post_id).all()
+    if form.validate_on_submit():
+        comment = form.comment.data
+        post_id = post_id
+        user_id = current_user._get_current_object().id
+        new_comment = Comment(  comment=comment,post_id=post_id,   user_id=user_id)
+        new_comment.save()
+        new_comment = [new_comment]
+        print(new_comments)
+        return redirect(url_for('.comment',post_id=post_id))
+    return render_template('comment.html',form=form,post=post,comments=comments,user=user)
     
