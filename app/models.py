@@ -126,18 +126,20 @@ class DownVote(db.Model):
         downvote_post.save()
 
 
-    @classmethod
-    def all_downvotes(cls):
-        downvote = Downvote.query.order_by('id').all()
-        return downvote
-
-    def __repr__(self):
-        return f'{self.user_id}:{self.post_id}'
 
     @classmethod
     def query_downvotes(cls,id):
         downvote = DownVote.query.filter_by(post_id=id.all()
         return downvote
+        
 
 
+    @classmethod
+    def all_downvotes(cls):
+        downvote = Downvote.query.order_by('id').all()
+        return downvote
+        
+
+    def __repr__(self):
+        return f'{self.user_id}:{self.post_id}'
 
