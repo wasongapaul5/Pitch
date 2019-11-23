@@ -52,4 +52,13 @@ def comment(post_id):
         print(new_comments)
         return redirect(url_for('.comment',post_id=post_id))
     return render_template('comment.html',form=form,post=post,comments=comments,user=user)
+
+@main.route('/user')
+@login_required
+def user():
+    username = current_user.username
+    user = User.query.filter_by(username=username).first()
+    if user is None:
+        return ('not found')
+    return render_template('profile.html',user=user)
     
