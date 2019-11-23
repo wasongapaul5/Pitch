@@ -74,8 +74,37 @@ class Comment(db.Model):
         comments = Comment.query.filter_by(post_id=post_id).all()
         return comments
 
+    def delete(self):
+        db.session.delete(self)
+        db.session.commit()
+
+    def __repr__(self):
+        return f'Comments: {self.comment}'
+
+class Upvote(db.Model):
+    __tablename__ = 'upvotes'
+    id = db.Column(db.Integer,primary_key=True)
+    upvote = db.Column(db.Integer,default=1)
+    user_id = db.Column(db.Integer,db.ForeignKey('users.id'))
+    post_id = db.Column(db.Integer,db.ForeignKey('posts.id'))
+
+    def save(self):
+        db.session.add(self)
+        db.session.commit()
+
+    def upvote(cls,id):
+        upvote_post = Upvote(user=current_user,post_id=id)
+        upvote_post.save()
+
+    @classmethod
+    def query_upvotes(cls,id):
+        upvote = Upvote.query.filter_by(post_id=id).all()
+        return upvote
+
+    @classmethod
+    def all_upvotes(cls):
+        upvotes = Upvote.query.order_by('id').all()
+        return upvotes
     
-
-    
-
-
+    def __repr__(self):
+        return f'{self.user_id}:{self.post_id}'
