@@ -14,3 +14,11 @@ def index():
 
 
 @main.route('/posts')
+@login_required
+def posts():
+    posts = Post.query.all()
+    likes = Upvote.query.all()
+    user = current_user
+    return render_template('pitch_display.html',posts=posts,likes=likes,user=user)
+
+
