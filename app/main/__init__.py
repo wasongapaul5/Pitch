@@ -1,4 +1,4 @@
-# from flask import Blueprint
+from flask import Blueprint
 
-# main = Blueprint('main',__name__)
-# from views inport *
+main = Blueprint('main',__name__)
+from views inport *
