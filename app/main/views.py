@@ -75,5 +75,21 @@ def updateprofile(name):
         user.save()
         return redirect(url_for('.profile',name=name))
     return render_template('profile/update_profile.html',form=form)
-    
+
+
+@main.route('/like/<int:id>',methods=['GET','POST'])
+@login_required
+def upvote(id):
+    post = Post.query.get(id)
+    vote_new = Upvote(post=post,upvote=1)
+    vote_new.save()
+    return redirect(url_for('main.posts'))
+
+@main.route('/dislike/<int:id>',methods=['GET','POST'])
+@login_required
+def downvote():
+    post = Post.query.get(id)
+    vote_new = Downvote(post=post,downvote1=1)
+    vote_new.save()
+    return redirect(url_for('main.posts'))
     
