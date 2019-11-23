@@ -1,8 +1,8 @@
 from flask import render_template,request,redirect,url_for
 from flask_login import login_user,logout_user
-# from app.auth import auth
-# from app.models import login_user
-# from ..email import email-message
+from app.auth import auth
+from app.models import login_user
+from ..email import email-message
 
           ###login content
 @auth.route('/login',methods=['GET','POST'])
