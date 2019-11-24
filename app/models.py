@@ -44,7 +44,7 @@ class Post(db.Model):
     post = db.Column(db.String,nullable=False)
     comment = db.relationship('Comment', backref='post', lazy='dynamic')
     category = db.Column(db.String,nullable=False)
-    date_created = db.Column(db.DateTime,default=datetime,utcnow)
+    date_created = db.Column(db.DateTime,default=datetime.utcnow)
     up_vote = db.relationship('Upvote',backref='post', lazy='dynamic')
     down_vote = db.relationship('DownVote', backref='post', lazy='dynamic')
 
@@ -113,7 +113,7 @@ class Upvote(db.Model):
 class DownVote(db.Model):
     __tablename__ = 'downvotes'
     id = db.Column(db.Integer,primary_key=True)
-    downvote = db.Column(db,Integer,default=1)
+    downvote = db.Column(db.Integer,default=1)
     user_id = db.Column(db.Integer,db.ForeignKey('users.id'))
     post_id = db.Column(db.Integer,db.ForeignKey('posts.id'))
 
@@ -127,19 +127,19 @@ class DownVote(db.Model):
 
 
 
-    @classmethod
-    def query_downvotes(cls,id):
-        downvote = DownVote.query.filter_by(post_id=id.all()
-        return downvote
+    # @classmethod
+    # def query_downvotes(cls,id):
+    #     downvote = DownVote.query.filter_by(post_id=id.all()
+    # return downvote
         
 
 
-    @classmethod
-    def all_downvotes(cls):
-        downvote = Downvote.query.order_by('id').all()
-        return downvote
+    # @classmethod
+    # def all_downvotes(cls):
+    #     downvote = Downvote.query.order_by('id').all()
+    # return downvote
         
 
-    def __repr__(self):
-        return f'{self.user_id}:{self.post_id}'
+    # def __repr__(self):
+    #     return f'{self.user_id}:{self.post_id}'
 

@@ -1,8 +1,7 @@
 from flask import render_template,request,redirect,url_for
 from flask_login import login_user,logout_user
 from app.auth import auth
-from app.models import login_user
-from ..email import email-message
+from ..email import email_message
 
           ###login content
 @auth.route('/login',methods=['GET','POST'])
@@ -41,7 +40,7 @@ def signup():
             return render_template('signup.html',error=error)
         if ' ' in username:
             error = 'Username should not contain spaces'
-            return render_template('signup.html'error=error)
+            return render_template('signup.html',error=error)
         if password !=confirm_password:
             error = 'Passwords do not match'
             return render_template('signup.html',error=error)
