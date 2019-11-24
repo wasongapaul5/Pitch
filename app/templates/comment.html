@@ -3,7 +3,7 @@
 {% from 'comment_macro.html' import display_comments %}
 {% import 'bootstrap/wtf.html' as wtf %}
 {% block styles %}
-{{super}}
+{{super()}}
 <link rel="stylesheet" href="{{url_for('static',filename='css/particle.css')}}">
 <link rel="stylesheet" href="url_for('static',filename='css/main.css')}}">
 {% endblock %}
