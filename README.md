@@ -7,10 +7,10 @@
 **Wasonga Paul O.**
 
 ## Screenshots
-<img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-09-52.png">
-<img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-49.png">
-<img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-09-19.png">
-<img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-27.png">
+<img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-09-52.png" width="800px">
+<img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-49.png"  width="800px">
+<img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-09-19.png" width="800px">
+<img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-27.png" width="800px">
 
 # Installations
 
