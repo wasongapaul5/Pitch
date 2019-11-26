@@ -1,22 +1,21 @@
 # Pitch
 
-**-Pitch is an application that allows users to create one minute pitches. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.**
+**- Pitch is an application that allows users to create one minute pitches. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.**
 
-# Author
+## Author
 
 **Wasonga Paul O.**
 
 ## Screenshots
-<img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-49.png"  width="800px">
-<img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-27.png" width="800px">
+![dr](file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-27.png)
 
-# Installations
+## Installations
 
 **The following command installs all the application requirements.**
 
 > **pip freeze -r requirements.txt**
 
-# Setup
+## Setup
 
 - **Run git clone https://github.com/wasongapaul5/Pitch.git.**
 - **Download the zip file from github**
@@ -27,7 +26,7 @@
 - 4.Run the application.
 - 5.Run tests.
 
-# Technologies used
+## Technologies used
 
 - flask
 - Html5
@@ -36,7 +35,7 @@
 - JAVASCRIPT
 - PYTHON
 
-# User Story
+## User Story
 - As a user, I would like to see the pitches other people have posted.
 - As a user, I would like to vote on the pitch they liked and give it a downvote or upvote.
 - As a user, I would like to be signed in for me to leave a comment
@@ -46,11 +45,9 @@
 - As a user, I would like to submit a pitch in any category.
 - As a user, I would like to view the different categories.
 
-# License
-- **MIT License
+## License
+- MIT @ WASONGA 2019
 
-# Copyright
-&copy; wasonga5 2019
 
-# Collaborate
+## Collaborate
 - To collaborate,reach me on wasongapaul5@gmail.com
