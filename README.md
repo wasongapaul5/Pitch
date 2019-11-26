@@ -7,7 +7,7 @@
 **Wasonga Paul O.**
 
 ## Screenshots
-![dr](file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-27.png)
+![fig-1](file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-27.png "fig-1")
 
 ## Installations
 
@@ -46,7 +46,7 @@
 - As a user, I would like to view the different categories.
 
 ## License
-- MIT @ WASONGA 2019
+- MIT &copy;WASONGA 2019
 
 
 ## Collaborate
