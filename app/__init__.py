@@ -8,6 +8,7 @@ from config import Config
 
 
 app = Flask(__name__)
+
 db = SQLAlchemy(app)
 login_manager = LoginManager(app)
 bootstrap = Bootstrap(app)
