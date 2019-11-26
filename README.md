@@ -7,9 +7,7 @@
 **Wasonga Paul O.**
 
 ## Screenshots
-<img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-09-52.png" width="800px">
 <img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-49.png"  width="800px">
-<img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-09-19.png" width="800px">
 <img src="file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-27.png" width="800px">
 
 # Installations
@@ -23,11 +21,11 @@
 - **Run git clone https://github.com/wasongapaul5/Pitch.git.**
 - **Download the zip file from github**
 - **After extracting the files**,
- > 1.Navigate to the project folder.
-> 2.Creat a virtual environment.
-> 3.Activate the virtual environment.
-> 4.Run the application.
-> 5.Run tests.
+- 1.Navigate to the project folder.
+- 2.Creat a virtual environment.
+- 3.Activate the virtual environment.
+- 4.Run the application.
+- 5.Run tests.
 
 # Technologies used
 
