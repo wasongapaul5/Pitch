@@ -7,7 +7,11 @@
 **Wasonga Paul O.**
 
 ## Screenshots
-![](file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-27.pngraw=true)
+<img src="https://github.com/wasongapaul5/Pitch/blob/master/app/static/pics/Screenshot%20from%202019-11-26%2012-08-27.png?raw=true">
+<img src="https://github.com/wasongapaul5/Pitch/blob/master/app/static/pics/Screenshot%20from%202019-11-26%2012-08-49.png?raw=true">
+<img src="https://github.com/wasongapaul5/Pitch/blob/master/app/static/pics/Screenshot%20from%202019-11-26%2012-08-58.png?raw=true">
+<img src="https://github.com/wasongapaul5/Pitch/blob/master/app/static/pics/Screenshot%20from%202019-11-26%2012-09-19.png?raw=true">
+<img src="https://github.com/wasongapaul5/Pitch/blob/master/app/static/pics/Screenshot%20from%202019-11-26%2012-09-52.png?raw=true">
 
 ## Installations
 
