@@ -7,7 +7,7 @@
 **Wasonga Paul O.**
 
 ## Screenshots
-![fig-1](file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-27.png "fig-1")
+![](file:///home/moringa/Pictures/Screenshot%20from%202019-11-26%2012-08-27.pngraw=true)
 
 ## Installations
 
